@@ -1,0 +1,101 @@
+body
+{
+	line-height: 15px;
+	background-color: #043565;
+	font-family: 'Candara Light' ,'sans-serif';
+
+}
+h1
+{
+	
+	color: #043565;
+}
+div
+{
+
+	width: 300px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 13px;
+	text-align: center;
+	box-shadow: 2px 2px 2px black;
+	height: 500px;
+
+}
+.input 
+{
+	margin: 5px;
+	height: 40px;
+	border: 3px #7D82B8 solid;
+	border-radius: 15px;
+	width: 300px;
+	text-align: center;
+}
+.user
+{
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: -50px;
+	left: 20px;
+}
+.password
+{
+	margin: 5px;
+	height: 40px;
+	border: 3px #7D82B8 solid;
+	border-radius: 15px;
+	width: 300px;
+	text-align: center;
+	position: relative;
+	margin-left: -19px;
+}
+.pass
+{	height: 20px;
+	width: 20px;
+	position: relative;
+	left: -30px;
+	top: -42px;	
+}
+.forgot
+{
+	line-height: 30px;
+}
+.login
+{
+	width: 170px;
+	margin: 20px;
+	border-radius: 20px;
+	height: 30px;
+	background-color: #27FB6B;
+	border: 2px white;
+	box-shadow: 1px 1px 3px white;
+	color: #FFFFFF;
+	font-family: 'Candara Light';
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+}
+.signin
+{
+	width: 170px;
+	margin: 10px;
+	border-radius: 20px;
+	height: 30px;
+	background-color: #33A1FD;
+	border: 2px white;
+	box-shadow: 1px 1px 3px white;
+	color: white;
+	font-family: 'Candara Light';
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+}
+input:focus {
+    outline: none;
+
+}
