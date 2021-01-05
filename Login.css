@@ -9,7 +9,7 @@ body
 	/*background-image: url("bg.jpg");*/
 	background-image: url("BACK.PNG");
 	background-repeat: no-repeat;
-	background-position: center;
+	
 	background-size: cover;
 	background-color: #6ec6c6ff;
 	font-family: 'Candara Light' ,'sans-serif';
