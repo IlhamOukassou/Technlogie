@@ -3,22 +3,20 @@
 <head>
 	<title>ENSAK</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	
 	<link rel="stylesheet" type="text/css" href="Login.css">
-	
 </head>
 <body>
-	<div class="col-6">
-	<img src="logo.png" alt="ENSAK" class="logo" width="70%">
-	<h2>Hello...</h2>
+	<img src="logo.png" alt="ENSAK" class="logo">
+	<div class="conteneur">
+	
+	<h4>WELCOME <span class="BACK"> BACK :</span></h4>
 	
 	<form method="POST" action="Login.php">
-		<input type="email" name="email" placeholder="Email" class="input"> <br>
-		<img src="user.png" class="user">
-		<input type="password" name="password" placeholder="Password" class="password"> <br>
-		<img src="password.png" class="pass">
-		<span class="forgot">Forgot password ? <a href="Forgotpassword.php" >Click Here</a></span> <br>
+		<input type="email" name="email" placeholder="Email" class="input"> 
+		<img src="user.png" class="img_user">
+		<input type="password" name="password" placeholder="Password" class="password"> <br/>
+		<img src="password.png" class="logo_pass">
+		<span class="forgot">Forgot password ? <a href="Forgotpassword.php" class="forgot_pastraitement" >Click Here</a></span> <br/>
 		<input type="submit" name="Login" value="Login" class="login">
 	</form>
 	<form method="POST" action="Signin.php">
