@@ -9,11 +9,7 @@ body
 	/*background-image: url("bg.jpg");*/
 	background-image: url("BACK.PNG");
 	background-repeat: no-repeat;
-<<<<<<< HEAD
 	
-=======
-	background-position: center;
->>>>>>> 4188a73b9360a8b6949885c6a6982ca7a2d583a0
 	background-size: cover;
 	background-color: #6ec6c6ff;
 	font-family: 'Candara Light' ,'sans-serif';
@@ -35,7 +31,6 @@ h4{
 display: block;
 margin-top: 10px;
 
-<<<<<<< HEAD
 }
 
 .logo{
@@ -44,16 +39,6 @@ margin-top: 10px;
 	position: relative;
 }
 
-=======
-}
-
-.logo{
-	width: 240px;
-	margin-top: 15px;
-	position: relative;
-}
-
->>>>>>> 4188a73b9360a8b6949885c6a6982ca7a2d583a0
 
 /*LE CARREAU */
 .conteneur
