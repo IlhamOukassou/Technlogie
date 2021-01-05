@@ -1,101 +1,154 @@
+@font-face{
+	font-family: POLICE1;
+	src: url("Audiowide-Regular.ttf");
+}
+
 body
 {
 	line-height: 15px;
-	background-color: #043565;
+	/*background-image: url("bg.jpg");*/
+	background-image: url("BACK.PNG");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #6ec6c6ff;
 	font-family: 'Candara Light' ,'sans-serif';
 
 }
-h1
-{
-	
-	color: #043565;
+h4{
+	padding-left: 0px;
+	margin: auto;
+	color: #3c6777;
+	margin-bottom: 30px;
+	width: 130px;
+	font-size: 20px;
+	margin-top: 4px;
+	font-family: POLICE1,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 800;
+    
 }
-div
+.BACK{
+display: block;
+margin-top: 10px;
+
+}
+
+.logo{
+	width: 240px;
+	margin-top: 15px;
+	position: relative;
+}
+
+
+/*LE CARREAU */
+.conteneur
 {
 
-	width: 300px;
-	background-color: white;
+	width: 420px;
+	height: 400px;
+	background-color: #6ec6c6ff;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 100px;
+	margin-top: 40px;
 	padding: 20px;
+	padding-top: 60px;
+	padding-bottom: 4px;
 	text-align: center;
 	border-radius: 13px;
-	text-align: center;
-	box-shadow: 2px 2px 2px black;
-	height: 500px;
-
+	box-shadow: 0px 0px 14px white;
 }
 .input 
 {
-	margin: 5px;
+	margin: auto;
+	margin-bottom: 10px;
 	height: 40px;
-	border: 3px #7D82B8 solid;
+	border: 3px #fcfcff solid;
 	border-radius: 15px;
-	width: 300px;
+	width: 400px;
 	text-align: center;
+	
 }
-.user
+
+input:focus {
+    outline: none;
+}
+
+.img_user
 {
 	height: 20px;
 	width: 20px;
 	position: relative;
-	top: -50px;
-	left: 20px;
+	top: -45px;
+    right: 170px;
 }
 .password
 {
-	margin: 5px;
+	margin: auto;
+	margin-bottom: 20px;
 	height: 40px;
-	border: 3px #7D82B8 solid;
+	border: 3px #fcfcff solid;
 	border-radius: 15px;
-	width: 300px;
+	width: 400px;
 	text-align: center;
-	position: relative;
-	margin-left: -19px;
+    font-size: 20px;
 }
-.pass
+ /*POUR CHANGER LE WIDTH DU PLACEHOLDER EST NE PAS TOUCHER AU TEXT*/
+::-webkit-input-placeholder { font-size: 16px; }
+::-moz-placeholder { font-size: 16px; } /* firefox 19+ */
+:-ms-input-placeholder { font-size: 16px; } /* ie */
+input:-moz-placeholder { font-size: 16px; }
+
+.logo_pass
 {	height: 20px;
 	width: 20px;
 	position: relative;
-	left: -30px;
-	top: -42px;	
+	top: -53px;
+	right: 75px;
 }
 .forgot
 {
 	line-height: 30px;
+	position: relative;
+	right: 10px;
+	font-weight: 700;
+
+}
+.forgot_pastraitement{
+font-weight: 700;
+margin-left: 10px;
+line-height: 30px;
+color: rgb(31, 136, 206);
+
 }
 .login
 {
 	width: 170px;
-	margin: 20px;
+	margin: 17px;
 	border-radius: 20px;
-	height: 30px;
-	background-color: #27FB6B;
+	height: 35px;
+	background-color: rgb(9, 197, 141);
 	border: 2px white;
-	box-shadow: 1px 1px 3px white;
+	box-shadow: 0px 0px 7px white;
 	color: #FFFFFF;
 	font-family: 'Candara Light';
 	font-weight: bold;
 	font-size: 20px;
-	cursor: pointer;
+     cursor: pointer;
 }
 .signin
 {
 	width: 170px;
 	margin: 10px;
 	border-radius: 20px;
-	height: 30px;
-	background-color: #33A1FD;
+	height: 35px;
+	background: rgb(24,122,149);
+    background: linear-gradient(90deg, rgba(24,122,149,1) 0%, rgba(32,141,177,1) 45%, rgba(41,162,209,1) 100%);
 	border: 2px white;
-	box-shadow: 1px 1px 3px white;
+	box-shadow: 0px 0px 7px white;
 	color: white;
 	font-family: 'Candara Light';
 	font-weight: bold;
 	font-size: 20px;
 	cursor: pointer;
-}
-input:focus {
-    outline: none;
 
 }
