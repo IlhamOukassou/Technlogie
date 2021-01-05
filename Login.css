@@ -96,6 +96,6 @@ div
 	cursor: pointer;
 }
 input:focus {
-    outline: none;
-
+	outline: none;
+	
 }
