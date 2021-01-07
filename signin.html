@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="Login.css">
+	<style type="text/css">
+		body
+		{
+			line-height: 30px;
+		}
+		.conteneur
+		{
+			height: 570px;
+			width: 500px;
+		}
+		.submit
+		{
+			margin-left: 200px;
+			margin-top: 20px;
+			width: 100px;
+			border-radius: 15px;
+			height: 30px;
+			border: 2px white;
+			box-shadow: 1px 1px 3px white;
+			color: white;
+			font-family: 'Candara Light';
+			font-weight: bold;
+			font-size: 20px;
+			background-color: white;
+			color: black;
+			cursor: pointer;
+		}
+		.radio
+		{
+			position: relative;
+			left: -180px;
+		}
+		.rad
+		{
+			position: relative;
+			left: -170px;
+		}
+		.h4
+		{
+			font-size: 25px;
+			position: relative;
+			left: -150px;
+		}
+		.hh4
+		{
+			margin-top: 30px;
+			font-size: 25px;
+			position: relative;
+			left: -155px;
+		}
+		.day 
+		{
+			width: 50px;
+			border: 3px #fcfcff solid;
+			border-radius: 15px;
+
+		}
+		.month
+		{
+			width: 57px;
+			border: 3px #fcfcff solid;
+			border-radius: 15px;
+			text-align: center;
+		}
+		.year
+		{
+			text-align: center;
+			width: 100px;
+			border: 3px #fcfcff solid;
+			border-radius: 15px;
+		}
+
+	</style>
+</head>
+<body>
+	<img src="logo.png" alt="ENSAK" class="logo">
+	<div class="conteneur">
+	
+	<h4>SIGN IN :</h4>
+	
+	<form method="POST" action="compte.php">
+		<input type="text" name="text" placeholder="First name" class="input" pattern="{A-Z}||{a-z}"> 
+		
+<input type="text" name="password" placeholder="Last-name" class="password" pattern="{A-Z}||{a-z}"> <br/>
+		<h3 class="h4">Birth day :</h3> <br>
+		<input type="tel" name="jour" placeholder="Day" class="day" pattern="{0-9}">
+		<input type="tel" name="mois" placeholder="Month" class="month" pattern="{A-Z}||{a-z}">
+		<input type="tel" name="annee" placeholder="Year" class="year" pattern="{0-9}"><br>
+		<h3 class="hh4">Genre :</h3> <br>
+		 <div class="radio"><input type="radio" name="genre" class="form-check-input"> Man <br> </div>
+		<div class="rad"><input type="radio" name="genre" class="form-check-input"> Woman <br> </div>
+	
+		<input type="submit" name="Login" value="Next" class="submit">
+	</form>
+</div>
+</body>
+</html>
