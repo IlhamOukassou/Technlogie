@@ -135,6 +135,52 @@ function userDisliked($id_post)
     return false;
   }
 }
+// users list
+$query_users = "SELECT * FROM user WHERE id_user != $id_user";
+
+$result_user = mysqli_query($link,$query_users);
+
+
+// get follows
+function get_follows($link,$id_user,$id_follower){
+  $query_follow = "SELECT user.id_user FROM followers JOIN user on followers.id_follower = user.id_user AND followers.id_user = $id_user";
+  $result_follow = mysqli_query($link,$query_follow);
+  $following = array();
+  $i =0;
+  while($row_follower = mysqli_fetch_assoc($result_follow)){
+    $following[$i] = $row_follower["id_user"];
+    $i++;
+  }
+  if(in_array($id_follower,$following)){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+
+if(isset($_POST['act'])){
+    $act = $_POST['act'];
+    $id_user_list =  $_POST['id_user'];
+    switch($act){
+      case "follow" : 
+          $query = "INSERT INTO followers (id_user, id_follower) VALUES ($id_user,$id_user_list)";
+          break;
+      case "Unfollow" : 
+          $query = "DELETE FROM followers WHERE id_user = $id_user AND id_follower = $id_user_list  " ;
+          break;
+    }
+    mysqli_query($link,$query) or die("query failed");
+    
+
+
+
+
+
+}
+
+
+
 
 
 
