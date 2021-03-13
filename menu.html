@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Menu</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style type="text/css">
 		img:hover
 		{
@@ -11,6 +12,8 @@
 		img
 		{
 			margin-top: 10px;
+			position: absolute;
+			left:50px;
 		}
 		.menu
 		{
@@ -32,8 +35,8 @@
 			margin-top: -10px;
 			list-style: none;
 			background-color: #2B2D42;
-			width: 83px;
-			height: 588px;
+			width: 120px;
+			height: 598px;
 			padding-top: 10px;
 			position: absolute;
 			left: 48px;
@@ -46,8 +49,8 @@
 			margin-top: -10px;
 			list-style: none;
 			background-color: #2B2D42;
-			width: 83px;
-			height: 588px;
+			width: 120px;
+			height: 598px;
 			padding-top: 10px;
 			position: absolute;
 			left: 48px;
@@ -60,8 +63,8 @@
 			margin-top: -10px;
 			list-style: none;
 			background-color: #2B2D42;
-			width: 83px;
-			height: 588px;
+			width: 120px;
+			height: 598px;
 			padding-top: 10px;
 			position: absolute;
 			left: 48px;
@@ -74,8 +77,8 @@
 			margin-top: -10px;
 			list-style: none;
 			background-color: #2B2D42;
-			width: 83px;
-			height: 588px;
+			width: 120px;
+			height: 598px;
 			padding-top: 10px;
 			position: absolute;
 			left: 48px;
@@ -84,12 +87,12 @@
 		}
 		.hide5
 		{
-				margin-left: 52px;
+			margin-left: 52px;
 			margin-top: -10px;
 			list-style: none;
 			background-color: #2B2D42;
-			width: 83px;
-			height: 588px;
+			width: 120px;
+			height: 598px;
 			padding-top: 10px;
 			position: absolute;
 			left: 48px;
@@ -102,8 +105,8 @@
 			margin-top: -10px;
 			list-style: none;
 			background-color: #2B2D42;
-			width: 83px;
-			height: 588px;
+			width: 120px;
+			height: 598px;
 			padding-top: 10px;
 			position: absolute;
 			left: 48px;
@@ -112,7 +115,7 @@
 		}
 		.li
 		{
-			height: 80px;
+			height: 70px;
 			font-family: 'Candara Light' ,'sans-serif';
 			font-size: 18px;
 			color: white;
@@ -155,17 +158,22 @@
 			color: #43BCCD;
 		
 		}
+		#menudynamique 
+		{
+			position: absolute;
+			top: 20px;
+		}
 	</style>
 </head>
 <body>
 	<div id="menudynamique">
 	<ul class="menu">
 		<li class="icon">
-			<img src="cloche.png" width="40px" height="40px">
+			<img src="img/cloche.png" width="40px" height="40px">
 			<ul class="hide1">
 		<li class="li" id="notification"><a href="notification.php">Notifications</a></li>
 		<hr width="130px" color="gray">
-		<li class="li"><a href="home.php">Home</a>  </li>
+		<li class="li"><a href="maison.php">Home</a>  </li>
 		<hr width="130px" color="gray">
 		<li class="li"><a href="profile.php">Profile </a></li>
 		<hr width="130px" color="gray">
@@ -178,11 +186,11 @@
 	</ul>
 		</li>
 		<li class="icon">
-			<img src="home.png" width="40px" height="40px">
+			<img src="img/home.png" width="40px" height="40px">
 			<ul class="hide2">
 		<li class="li" id="notification"><a href="notification.php">Notifications</a></li>
 		<hr width="130px" color="gray">
-		<li class="li"><a href="home.php">Home</a>  </li>
+		<li class="li"><a href="maison.php">Home</a>  </li>
 		<hr width="130px" color="gray">
 		<li class="li"><a href="profile.php">Profile </a></li>
 		<hr width="130px" color="gray">
@@ -196,11 +204,11 @@
 		</li >
 		
 		<li class="icon">
-			<img src="us.png" width="40px" height="40px">
+			<img src="img/us.png" width="40px" height="40px">
 			<ul class="hide3">
 		<li class="li" id="notification"><a href="notification.php">Notifications</a></li>
 		<hr width="130px" color="gray">
-		<li class="li"><a href="home.php">Home</a>  </li>
+		<li class="li"><a href="maison.php">Home</a>  </li>
 		<hr width="130px" color="gray">
 		<li class="li"><a href="profile.php">Profile </a></li>
 		<hr width="130px" color="gray">
@@ -213,11 +221,11 @@
 	</ul>
 		</li>
 		<li class="icon">
-			<img src="settings.png" width="40px" height="40px">
+			<img src="img/settings.png" width="40px" height="40px">
 			<ul class="hide4">
 		<li class="li" id="notification"><a href="notification.php">Notifications</a></li>
 		<hr width="130px" color="gray">
-		<li class="li"><a href="home.php">Home</a>  </li>
+		<li class="li"><a href="maison.php">Home</a>  </li>
 		<hr width="130px" color="gray">
 		<li class="li"><a href="profile.php">Profile </a></li>
 		<hr width="130px" color="gray">
@@ -232,11 +240,11 @@
 		</li>
 		
 		<li class="icon">
-			<img src="power-button-off.png" width="40px" height="40px">
+			<img src="img/power-button-off.png" width="40px" height="40px">
 			<ul class="hide5">
 		<li class="li" id="notification"><a href="notification.php">Notifications</a></li>
 		<hr width="130px" color="gray">
-		<li class="li"><a href="home.php">Home</a>  </li>
+		<li class="li"><a href="maison.php">Home</a>  </li>
 		<hr width="130px" color="gray">
 		<li class="li"><a href="profile.php">Profile </a></li>
 		<hr width="130px" color="gray">
@@ -249,11 +257,11 @@
 	</ul>
 		</li>
 		<li class="icon">
-			<img src="question-sign.png" width="40px" height="40px">
+			<img src="img/question-sign.png" width="40px" height="40px">
 			<ul class="hide6">
 		<li class="li" id="notification"><a href="notification.php">Notifications</a></li>
 		<hr width="130px" color="gray">
-		<li class="li"><a href="home.php">Home</a>  </li>
+		<li class="li"><a href="maison.php">Home</a>  </li>
 		<hr width="130px" color="gray">
 		<li class="li"><a href="profile.php">Profile </a></li>
 		<hr width="130px" color="gray">
@@ -267,7 +275,7 @@
 		</li>
 	</ul>
 	
-	<div class="vl"></div>
+	
 </div>
 </body>
 </html>

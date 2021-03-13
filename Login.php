@@ -3,25 +3,25 @@
 ?>
 <?php 
 		if (isset($_POST['Login'])) {
-			include('include/connexion.php');
-			$_SESSION["email"]=$_POST["email"];
-			$_SESSION["password"]=$_POST["password"];
-			$dat=$_POST['email'];
-			$data=$_POST['password'];
-			$req="SELECT email,mot_de_passe FROM `user` WHERE email='$dat'  AND mot_de_passe='$data'";
+			include('connexion.php');
+			$_SESSION['email']=$_POST['email'];
+			$_SESSION['password']=$_POST['password'];
+			$req="SELECT email,mot_de_passe FROM `user` ";
 			
 			$res=mysqli_query($link,$req) or die("echec");
-			if (mysqli_num_rows($res)==0) {
-				 ?>
+			while($data=mysqli_fetch_assoc($res)) {
+				$mail=$data['email'];
+				$pass=$data['mot_de_passe'];
+				if ($mail!=$_POST['email'] OR $pass!=$_POST['password'])
+				{ ?>
 					<div class="erreur"> Le mot de passe ou l'email est incorrect </div>
-				<?php 
+				<?php }
+				else
+				{
+					 header("location:maison.php");
+				}
+				
 			}
-			else
-			{
-				header("location:home.php");
-			}
-
-		
 
 		}
 	 ?>
@@ -30,7 +30,7 @@
 <head>
 	<title>ENSAK</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="Login.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
 		.erreur
 {
@@ -39,6 +39,9 @@
 	left: 550px;
 	color: red;
 	font-size: 18px;
+}
+.conteneur{
+	height: 420px;
 }
 	</style>
 </head>
@@ -56,7 +59,7 @@
 		<span class="forgot">Forgot password ? <a href="Forgotpassword.php" class="forgot_pastraitement" >Click Here</a></span> <br/>
 		<input type="submit" name="Login" value="login" class="login">
 	</form>
-	<form method="POST" action="Signin.html">
+	<form method="POST" action="Signin.php">
 		<input type="submit" name="Signin" value="Sign in" class="signin">
 	</form>
 	
